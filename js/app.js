@@ -1,12 +1,14 @@
-/* ================= LOADER ================= */
+/* Loader */
 window.onload = () => {
     const loader = document.getElementById('loader');
     if (loader) {
-        setTimeout(() => loader.style.display = 'none', 300);
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 0);
     }
-};
+}
 
-/* ================= MENU MOBILE ================= */
+/* Menu Mobile */
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -24,7 +26,7 @@ if (hamburger && mobileMenu) {
     });
 }
 
-/* ================= HERO SLIDER ================= */
+/* Hero Slider */
 const slides = document.querySelectorAll('.hero-slide');
 const dots = document.querySelectorAll('.dot');
 const nextBtn = document.querySelector('.hero-arrow.right');
@@ -101,7 +103,7 @@ if (slides.length > 1 && nextBtn && prevBtn) {
     }
 }
 
-/* ================= SCROLL REVEAL ================= */
+/* Scroll reveal */
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
@@ -115,7 +117,7 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
-/* ================= HEADER SHADOW ================= */
+/* Header show*/
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (header) {
@@ -123,7 +125,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-/* ================= APLICAÇÕES SLIDER ================= */
+/* Aplicações Slider */
 const appSlides = document.querySelectorAll('.application-slide');
 const appNext = document.querySelector('.app-arrow.right');
 const appPrev = document.querySelector('.app-arrow.left');
@@ -232,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let index = 0;
     let scale = 1;
 
-    /* ================= ABRIR ZOOM ================= */
+    /* Abrir Zoom */
 
     document.querySelectorAll(
         '.gallery-images img, .product-images img, .gallery-track img'
@@ -275,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     }
 
-    /* ================= EVENTOS ================= */
+    /* Eventos */
 
     closeBtn.addEventListener('click', closeZoom);
 
@@ -340,9 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* ============================= */
-/* SLIDER SERVIÇOS               */
-/* ============================= */
+/* Slider Serviços */
 
 document.querySelectorAll('.service-slider').forEach(slider => {
     const images = slider.querySelectorAll('img');
@@ -355,9 +355,7 @@ document.querySelectorAll('.service-slider').forEach(slider => {
     }, 3500);
 });
 
-/* ============================= */
-/* GALERIA PADRÃO (SERVIÇOS)     */
-/* ============================= */
+/* Galeria padão serviços (sem zoom) */
 
 document.querySelectorAll('[data-gallery]').forEach(gallery => {
     const images = gallery.querySelectorAll('.gallery-track img');
@@ -389,7 +387,7 @@ document.querySelectorAll('[data-gallery]').forEach(gallery => {
     });
 });
 
-/* ================= PRODUCT SLIDERS (ANIMADO + AUTOPLAY) ================= */
+/* Prodcuts Sliders */
 
 const productSliders = {
     weld: {
@@ -452,7 +450,7 @@ function animateSlide(type, dir, userTriggered = true, forcedIndex = undefined) 
 
     slider.isAnimating = true;
 
-    // ---- LIMPA estilos / classes previstos ----
+    // LIMPA estilos / classes previstos 
     imgs.forEach(img => {
         img.classList.remove('active');
         // limpa estilos inline que possam existir
@@ -462,7 +460,7 @@ function animateSlide(type, dir, userTriggered = true, forcedIndex = undefined) 
         img.style.zIndex = '';
     });
 
-    // ---- PREPARA próxima imagem (posição inicial fora da tela) ----
+    // PREPARA próxima imagem (posição inicial fora da tela)
     // Sem transition para posicionar instantaneamente
     nextImg.style.transition = 'none';
     nextImg.style.transform = `translateX(${dir === 1 ? '100%' : '-100%'})`;
@@ -475,7 +473,7 @@ function animateSlide(type, dir, userTriggered = true, forcedIndex = undefined) 
     // eslint-disable-next-line no-unused-expressions
     nextImg.offsetWidth;
 
-    // ---- aplica transições suavemente ----
+    // Aplica transições suavemente
     const trans = 'transform 0.5s ease, opacity 0.5s ease';
     nextImg.style.transition = trans;
     currentImg.style.transition = trans;

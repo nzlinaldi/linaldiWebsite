@@ -1,4 +1,4 @@
-/* ================= POPUP ZOOM STUD ================= */
+/* Popup zoom Modal */
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isAnimating = false;
     let autoTimer = null;
 
-    // ===== SETUP: Adicionar listeners nas imagens =====
+    // Adicionar listeners para as imagens da galeria
     document.querySelectorAll('.gallery-images img').forEach(img => {
         img.style.cursor = 'zoom-in';
         img.addEventListener('click', function(e) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== FUNÇÕES =====
+    // Funções
     function openZoom() {
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         startAuto();
     }
 
-    // ===== EVENT LISTENERS =====
+    // Event listeners
     closeBtn.addEventListener('click', closeZoom);
 
     prevBtn.addEventListener('click', function() {

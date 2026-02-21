@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://linaldi.com/">
     <link rel="alternate" hreflang="pt-BR" href="https://linaldi.com/" />
     
-    <!-- Preload recursos críticos -->
+    <!-- Carregamento prévio de recursos críticos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="css/style.css" as="style">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     
-    <!-- Structured Data -->
+    <!-- Dados estruturados -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -55,10 +55,10 @@
     }
     </script>
     
-    <!-- FAVICON -->
+    <!-- FavIcon -->
     <link rel="icon" sizes="32x32" href="img/Logo-Linaldi-Icon.ico" type="image/x-icon">
 
-    <!-- FONTES -->
+    <!-- Fontes -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
@@ -68,10 +68,10 @@
 </head>
 <body>
 
-<!-- Skip link para acessibilidade -->
+<!-- Link para pular para conteúdo principal -->
 <a href="#main" class="skip-link">Pular para conteúdo principal</a>
 
-<!-- LOADER -->
+<!-- Loader -->
 <a href="#main" class="skip-link">Pular para conteúdo principal</a>
 <div id="loader">
     <div class="loader-spinner"></div>
@@ -82,19 +82,24 @@
    class="whatsapp-float" 
    target="_blank" 
    aria-label="WhatsApp">
-    <img src="../img/whatsapp.png" alt="WhatsApp">
+    <img src="img/whatsapp.png" alt="WhatsApp">
 </a>
 
-<!-- ================= HEADER ================= -->
+<!-- Badge 5 anos -->
+<div class="badge-5-years" aria-label="Linaldi 5 anos de excelência">
+    <img src="img/badge-5-anos.png" alt="Linaldi 5 anos de excelência" loading="lazy">
+</div>
+
+<!-- Header -->
 <header class="header">
     <div class="header-inner">
 
-        <!-- LOGO -->
+        <!-- Logotipo -->
         <a href="/">
-            <img src="../img/logo-linaldi.png" class="logo" alt="Linaldi"/>
+            <img src="img/logo-linaldi.png" class="logo" alt="Linaldi"/>
         </a>
 
-        <!-- NAV DESKTOP -->
+        <!-- Navegação Desktop -->
         <nav class="nav">
             <a href="/">Início</a>
             <a href="quem-somos/">Quem Somos</a>
@@ -103,7 +108,7 @@
             <a href="contato/">Contato</a>
         </nav>
 
-        <!-- BOTÃO HAMBURGUER -->
+        <!-- Botão Hambúrguer -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -113,7 +118,7 @@
     </div>
 </header>
 
-<!-- ================= MENU MOBILE ================= -->
+<!-- Menu Mobile -->
 <div class="mobile-menu" id="mobileMenu">
         <a href="/">Início</a>
         <a href="quem-somos/">Quem Somos</a>
@@ -122,7 +127,7 @@
         <a href="contato/">Contato</a>
 </div>
 
-<!-- HERO -->
+<!-- Seção Hero -->
 <section class="hero-slider" role="main" id="main">
 
     <div class="hero-slide active" style="background-image:url('img/produtos-solda-pino.png')">
@@ -159,7 +164,7 @@
     </div>
 </section>
 
-<!-- ================= HIGHLIGHT ================= -->
+<!-- Destaques -->
 <section class="highlight-section" id="main" role="main" tabindex="-1">
 
     <div class="highlight-arrow"></div>
@@ -179,7 +184,7 @@
     </div>
 
 </section>
-<!-- CARDS -->
+<!-- Cartões de Produtos -->
 <section class="sections container">
     <div class="section-card reveal scale">
         <h2>Stud Weld</h2>
@@ -222,7 +227,7 @@
     </div>
 </section>
 
-<!-- INFO SECTIONS -->
+<!-- Seções de Informações -->
 <section class="info-section reveal">
     <div class="info-media">
         <div class="video-wrapper">
@@ -254,17 +259,17 @@
     </div>
 </section>
 
-<!-- ================= APLICAÇÕES ================= -->
+<!-- Aplicações -->
 <section class="applications-section reveal">
 
     <h2 class="applications-title">Nossas Aplicações</h2>
 
     <div class="applications-wrapper">
 
-        <!-- SETA ESQUERDA -->
+        <!-- Botão Seta Esquerda -->
         <button class="app-arrow left" aria-label="Aplicação anterior">&#10094;</button>
 
-        <!-- SLIDES -->
+        <!-- Slides -->
         <div class="applications-slider">
 
             <div class="application-slide active">
@@ -308,13 +313,13 @@
 
         </div>
 
-        <!-- SETA DIREITA -->
+        <!-- Botão Seta Direita -->
         <button class="app-arrow right" aria-label="Próxima aplicação">&#10095;</button>
 
     </div>
 </section>
 
-<!-- MAPA + INFORMAÇÕES -->
+<!-- Mapa e Informações -->
 <section class="map-section reveal">
     <div class="map-frame">
         <iframe 
@@ -342,12 +347,12 @@
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="footer">
 
     <div class="footer-inner">
 
-        <!-- BLOCO ESQUERDO: CONTATO + TELEFONES -->
+        <!-- Bloco Contato e Telefones -->
         <div class="footer-block">
             <span class="footer-title">Contato</span>
                 <div class="mail-footer">
@@ -362,7 +367,7 @@
 
         <div class="footer-line"></div>
 
-        <!-- BLOCO CENTRAL: LOGO + ENDEREÇO -->
+        <!-- Bloco Logotipo e Endereço -->
         <div class="footer-block footer-center">
             <img src="img/logo-linaldi.png" class="footer-logo">
             <p>
@@ -374,7 +379,7 @@
 
         <div class="footer-line"></div>
 
-        <!-- BLOCO DIREITO: REDES SOCIAIS -->
+        <!-- Bloco Redes Sociais -->
         <div class="footer-block footer-social">
             <span class="footer-title">Redes Sociais</span>
 
