@@ -1,0 +1,21 @@
+# Robots.txt - Otimizado para SEO
+User-agent: *
+Allow: /
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/
+
+# Desindexar páginas de produto específicas
+User-agent: Googlebot
+Disallow: /stud-weld/
+Disallow: /stud-bolt/
+
+User-agent: Bingbot
+Disallow: /stud-weld/
+Disallow: /stud-bolt/
+
+# Crawl delay
+User-agent: *
+Crawl-delay: 1
+
+Sitemap: https://linaldi.com/sitemap.xml
