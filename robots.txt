@@ -1,0 +1,12 @@
+# Robots.txt - Otimizado para SEO
+User-agent: *
+Allow: /
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/
+
+# Crawl delay
+User-agent: *
+Crawl-delay: 1
+
+Sitemap: https://linaldi.com/sitemap.xml
