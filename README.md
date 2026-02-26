@@ -74,33 +74,6 @@ linaldiWebsite/
 
 ---
 
-## How to Run
-
-1. **Clone the repository**
-```
-bash
-git clone https://github.com/nzlinaldi/linaldiWebsite.git
-```
-
-2. **Navigate to the directory**
-```
-bash
-cd linaldiWebsite
-```
-
-3. **Open in browser**
-```
-bash
-# Simply open index.html in your browser
-# Or use a local server:
-python -m http.server 8000
-```
-
-4. **Access**
-```
-http://localhost:8000
-```
-
 ## Live Preview
 
 **Visit the website**: [www.linaldi.com](https://linaldi.com)
