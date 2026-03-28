@@ -83,7 +83,7 @@ linaldiWebsite/
 ## Author
 
 - **GitHub**: [https://github.com/nzlinaldi](https://github.com/nzlinaldi)
-- **LinkedIn**: [https://www.linkedin.com/in/enzo-linaldi-315204389/](https://www.linkedin.com/in/enzo-linaldi-315204389/)
+- **LinkedIn**: [https://www.linkedin.com/in/enzo-linaldi-315204389/](https://www.linkedin.com/in/enzolinaldi)
 
 ---
 
